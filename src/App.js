@@ -3,8 +3,9 @@ import FoodItem from "./FoodItem";
 
 
 function App() {
-  // Temp
-  let jsonFile = require("./FoodItems.json")
+  let jsonFile = require("./FoodItems.json");
+  
+  // Temporary
   console.log(jsonFile)
   // const asArray = Object.values(jsonFile)
   console.log(FoodItem(jsonFile, "Flour"));
