@@ -1,4 +1,30 @@
+/* This is for each of the food icons within the food list */
+
 .foodIcon {
     background-color: rgba(163, 163, 163, 0.57);
-    width: 5em;
+    width: 10em;
+}
+
+.health{
+    color: red;
+}
+
+.stamina {
+    color: yellow;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.itemName {
+    margin: auto;
+    width: 50%;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
