@@ -1,0 +1,15 @@
+{ 
+    "Flour":{
+        "FileName": "flour.png",
+        "Name":"Flour",
+        "HP":25,
+        "STAM":25
+        }
+    ,
+    "Blueberries":{
+        "FileName": "Blueberries.png",
+        "Name":"Blueberries",
+        "HP":25,
+        "STAM":25
+        }
+}
