@@ -1,10 +1,74 @@
 { 
+    "Raspberries":{
+        "FileName": "Raspberries.png",
+        "Name":"Raspberries",
+        "HP":15,
+        "STAM":15,
+        "Tier":1
+    }
+    ,
+    "Mushroom":{
+        "FileName": "Mushroom.png",
+        "Name":"Mushroom",
+        "HP":15,
+        "STAM":15,
+        "Tier":1
+        }
+    ,
+    "Grilled_neck_tail":{
+        "FileName": "Grilled_neck_tail.png",
+        "Name":"Grilled neck tail",
+        "HP":25,
+        "STAM":8,
+        "Tier":1
+        }
+    ,
     "Blueberries":{
         "FileName": "Blueberries.png",
         "Name":"Blueberries",
         "HP":8,
         "STAM":25,
+        "Tier":1
+        }
+    ,
+    "Cooked_boar_meat":{
+        "FileName": "Cooked_boar_meat.png",
+        "Name":"Cooked boar meat",
+        "HP":30,
+        "STAM":10,
+        "Tier":1
+        }
+    ,
+    "Yellow_mushroom":{
+        "FileName": "Yellow_mushroom.png",
+        "Name":"Yellow mushroom",
+        "HP":10,
+        "STAM":30,
+        "Tier":1
+        }
+    ,
+    "Carrot":{
+        "FileName": "Carrot.png",
+        "Name":"Carrot",
+        "HP":10,
+        "STAM":32,
         "Tier":2
+        }
+    ,
+    "Honey":{
+        "FileName": "Honey.png",
+        "Name":"Honey",
+        "HP":8,
+        "STAM":35,
+        "Tier":1
+        }
+    ,
+    "Boar_jerky":{
+        "FileName": "Boar_jerky.png",
+        "Name":"Boar jerky",
+        "HP":23,
+        "STAM":23,
+        "Tier":1
         }
     ,
     "Deer_meat_cooked":{
@@ -14,4 +78,53 @@
         "STAM":12,
         "Tier":1
     }
+    ,
+    "Minced_meat_sauce":{
+        "FileName": "Minced_meat_sauce.png",
+        "Name":"Minced meat sauce",
+        "HP":40,
+        "STAM":13,
+        "Tier":1
+    }
+    ,
+    "Onion":{
+        "FileName": "Onion.png",
+        "Name":"Onion",
+        "HP":13,
+        "STAM":40,
+        "Tier":999
+    }
+    ,
+    "Cloudberries":{
+        "FileName": "Cloudberries.png",
+        "Name":"Cloudberries",
+        "HP":13,
+        "STAM":40,
+        "Tier":999
+    }
+    ,
+    "Queens_jam":{
+        "FileName": "Queens_jam.png",
+        "Name":"Queens jam",
+        "HP":14,
+        "STAM":40,
+        "Tier":1
+    }
+    ,
+    "Carrot_soup":{
+        "FileName": "Carrot_soup.png",
+        "Name":"Carrot soup",
+        "HP":15,
+        "STAM":45,
+        "Tier":1
+    }
+    ,
+    "Replaceme":{
+        "FileName": "replace.png",
+        "Name":"replace",
+        "HP":999,
+        "STAM":999,
+        "Tier":999
+    }
+    
 }
