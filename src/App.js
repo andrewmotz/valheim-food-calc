@@ -1,4 +1,3 @@
-// import './App.css';
 import React, {useState} from "react";
 import FoodList from "./FoodList";
 import SelectedFood from "./SelectedFood";
@@ -7,9 +6,11 @@ import SelectedFood from "./SelectedFood";
 function App() {
   let jsonFile = require("./FoodItems.json");
 
+  //Reacts fancy state usage, kinda black magic to me but needed in order for stuff to update on page
   const [selectedItems, setSelectedItems] = useState([]);
   const [parameters, setParameters] = useState([4, "NONE"]); // To be implemented
   
+  //Called when a item is clicked on in the food list
   function addFoodItemClickHandler(foodobject){
     console.log(selectedItems);
     console.log("boop");
@@ -18,6 +19,7 @@ function App() {
     }
   }
 
+  //Called when items are clicked on in the selected items list
   function removeFoodItemClickHandler(foodobject){
     let index = 0;
     // let tempFoodItem = null;
@@ -25,17 +27,11 @@ function App() {
       if(selectedItems[i] === foodobject)
         index = i;
     }
-    selectedItems[index] = selectedItems[selectedItems.length - 1];
+    selectedItems[index] = selectedItems[selectedItems.length - 1]; // TODO FIX
     selectedItems.pop();
     console.log(selectedItems);
     setSelectedItems([...selectedItems]);
   }
-
-  // Temporary
-  // console.log(jsonFile)
-  // const asArray = Object.values(jsonFile)
-  // console.log(FoodItem(jsonFile, "Flour"));
-  // Temp
 
   return (
     <>

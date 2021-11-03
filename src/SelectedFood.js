@@ -3,6 +3,8 @@ import FoodItem from "./FoodItem";
 import styles from "./SelectedFood.module.css";
 
 export default function SelectedFood({selectedItems, removeFoodItemClickHandler, jsonFile}){
+
+    //Sad I have to do this again
     let jsonArray = Object.values(jsonFile);
     let largestHP = 0;
     let largestSTAM = 0;
@@ -15,8 +17,10 @@ export default function SelectedFood({selectedItems, removeFoodItemClickHandler,
         if(jsonArray[i].STAM > largestSTAM)
             largestSTAM = jsonArray[i].STAM;
     }
-    console.log("Selected Items");
-    console.log(selectedItems);
+    //End of sad
+
+    // console.log("Selected Items");
+    // console.log(selectedItems);
 
     return (
         <>
