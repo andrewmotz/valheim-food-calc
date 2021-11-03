@@ -2,7 +2,7 @@ import React from "react";
 import styles from './FoodList.module.css';
 import FoodItem from "./FoodItem";
 
-export default function FoodList(jsonData, tier, sortOrder){
+export default function FoodList(jsonData, tier, sortOrder, foodItemClickHandler){
     let jsonArray = Object.values(jsonData);
     let largestHP = 0;
     let largestSTAM = 0;
@@ -40,7 +40,7 @@ export default function FoodList(jsonData, tier, sortOrder){
     return (
         <div className={styles.listStyle}>
         {outputArray.map(foodItem => {
-            return FoodItem(foodItem, largestHP, largestSTAM);
+            return FoodItem(foodItem, largestHP, largestSTAM, foodItemClickHandler);
         })}
         </div>
     )
@@ -88,8 +88,8 @@ function NAMEcompare(a, b){
 
 
 //Returns all the possible methods that a object has, used for Andrews debugging
-function getAllMethods(obj) {
-    return Object.keys(obj)
-        .filter((key) => typeof obj[key] === 'function')
-        .map((key) => obj[key]);
-}
+// function getAllMethods(obj) {
+//     return Object.keys(obj)
+//         .filter((key) => typeof obj[key] === 'function')
+//         .map((key) => obj[key]);
+// }

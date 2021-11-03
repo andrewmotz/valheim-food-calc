@@ -33,10 +33,15 @@ const HEALTHSTYLES = {
   }
 
 
-export default function FoodItem(foodObject, largestHP, largestSTAM){
-    
+
+export default function FoodItem(foodObject, largestHP, largestSTAM, foodItemClickHandler){
+      //Clicker handler
+      function handleOnClick(){
+        foodItemClickHandler(foodObject);
+      }
+
     return (
-        <div className={styles.foodIconContainer}>
+        <div className={styles.foodIconContainer} onClick={handleOnClick}>
             <p className= {styles.itemNameCSS}>{foodObject.Name}</p>
 
             <div className={styles.foodIcon}>

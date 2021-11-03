@@ -1,8 +1,29 @@
 import React from "react";
+import FoodItem from "./FoodItem";
 
-export default function SelectedFood(){
+export default function SelectedFood({selectedItems, removeFoodItemClickHandler, jsonFile}){
+    let jsonArray = Object.values(jsonFile);
+    let largestHP = 0;
+    let largestSTAM = 0;
+
+    for(let i = 0; i < jsonArray.length; i++){
+        //Find the largest HP and Stamina values to set the hp/stam bars limit
+        if(jsonArray[i].HP > largestHP)
+            largestHP = jsonArray[i].HP;
+
+        if(jsonArray[i].STAM > largestSTAM)
+            largestSTAM = jsonArray[i].STAM;
+    }
+    console.log("Selected Items");
+    console.log(selectedItems);
 
     return (
-        <></>
+        <>
+        <div >
+            {selectedItems.map(foodItem => {
+                return FoodItem(foodItem, largestHP, largestSTAM, removeFoodItemClickHandler);
+            })}
+        </div>
+        </>
     )
 }
