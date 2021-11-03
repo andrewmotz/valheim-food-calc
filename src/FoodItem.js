@@ -33,7 +33,7 @@ const HEALTHSTYLES = {
   }
 
 
-export default function FoodItem(foodObject){
+export default function FoodItem(foodObject, largestHP, largestSTAM){
     
     return (
         <div className={styles.foodIconContainer}>
@@ -42,9 +42,9 @@ export default function FoodItem(foodObject){
             <div className={styles.foodIcon}>
               {/* Div for the progress bars */}
                 <div className={styles.progressBars}>
-                    <CircularProgressbar value = {foodObject.HP} maxValue={100} 
+                    <CircularProgressbar value = {foodObject.HP} maxValue={largestHP} 
                         counterClockwise={true} circleRatio={.5} styles={HEALTHSTYLES} strokeWidth={5}/>
-                    <CircularProgressbar value = {foodObject.STAM} maxValue={50} 
+                    <CircularProgressbar value = {foodObject.STAM} maxValue={largestSTAM} 
                         circleRatio={.5} styles= {STAMINASTLYES} strokeWidth={5}/>
                 </div>
 

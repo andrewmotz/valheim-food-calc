@@ -4,14 +4,26 @@ import FoodItem from "./FoodItem";
 
 export default function FoodList(jsonData, tier, sortOrder){
     let jsonArray = Object.values(jsonData);
-    console.log("Food list");
-
-    //Populate food list by selected tier or lower
+    let largestHP = 0;
+    let largestSTAM = 0;
     let outputArray = [];
+
+    //Loop through the json creating a new array that will be outputed and find largest HP/STAM values
     for(let i = 0; i < jsonArray.length; i++){
+        //Populate food list by selected tier or lower
         if(jsonArray[i].Tier <= tier)
             outputArray.push(jsonArray[i]);
+
+        //Find the largest HP and Stamina values to set the hp/stam bars limit
+        if(jsonArray[i].HP > largestHP)
+            largestHP = jsonArray[i].HP;
+
+        if(jsonArray[i].STAM > largestSTAM)
+            largestSTAM = jsonArray[i].STAM;
     }
+
+    // console.log("HP : " + largestHP + " STMA: " + largestSTAM);
+
 
     //Sort the Array
     if (sortOrder === "HP")
@@ -25,12 +37,13 @@ export default function FoodList(jsonData, tier, sortOrder){
     return (
         <div className={styles.listStyle}>
         {outputArray.map(foodItem => {
-            return FoodItem(foodItem);
+            return FoodItem(foodItem, largestHP, largestSTAM);
         })}
         </div>
     )
 }
 
+//====================Methods===========================
 //Sort by HP
 function HPcompare(a, b){
     if(a.HP < b.HP)
