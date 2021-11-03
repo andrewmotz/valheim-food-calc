@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './FoodList.module.css';
 import FoodItem from "./FoodItem";
 
 export default function FoodList(jsonData, tier, sortOrder){
@@ -22,9 +23,11 @@ export default function FoodList(jsonData, tier, sortOrder){
     
     //Return the data from the output array
     return (
-        outputArray.map(foodItem => {
+        <div className={styles.listStyle}>
+        {outputArray.map(foodItem => {
             return FoodItem(foodItem);
-        })
+        })}
+        </div>
     )
 }
 
