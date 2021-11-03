@@ -1,5 +1,6 @@
 // import './App.css';
 import FoodItem from "./FoodItem";
+import FoodList from "./FoodList";
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
   return (
     <>
       <h1> Hello world </h1>
-      { FoodItem(jsonFile, "Blueberries") }
+      {/* { FoodItem(jsonFile, "Blueberries") } */}
+      { FoodList(jsonFile, 1, 1) }
     </>
   );
 }

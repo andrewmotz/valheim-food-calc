@@ -34,15 +34,11 @@ const HEALTHSTYLES = {
   }
 
 
-export default function FoodItem(jsonData, itemName){
-    console.log(jsonData);
-
-    //Gets the object from the JSON file based off the name
-    let foodObject = jsonData[itemName];
+export default function FoodItem(jsonData, foodObject){
     
     return (
         <div className={styles.foodIconContainer}>
-            <p className= {styles.itemName}>{foodObject.Name}</p>
+            <p className= {styles.itemNameCSS}>{foodObject.Name}</p>
             <div className={styles.foodIcon}>
                 <div className={styles.progressBars}>
                     <CircularProgressbar value = {foodObject.HP} maxValue={100} 

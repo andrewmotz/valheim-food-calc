@@ -44,7 +44,7 @@
     text-shadow: #000 1px 1px 0px,#000 -1px 1px 0px,#000 1px -1px 0px,#000 -1px -1px 0px;
 }
 
-.itemName {
+.itemNameCSS {
     margin: auto;
     width: 50%;
 }
