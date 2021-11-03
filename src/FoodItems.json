@@ -119,12 +119,139 @@
         "Tier":1
     }
     ,
-    "Replaceme":{
-        "FileName": "replace.png",
-        "Name":"replace",
-        "HP":999,
-        "STAM":999,
+    "Cooked_fish":{
+        "FileName": "Cooked_fish.png",
+        "Name":"Cooked fish",
+        "HP":45,
+        "STAM":15,
         "Tier":999
     }
-    
+    ,
+    "Deer_stew":{
+        "FileName": "Deer_stew.png",
+        "Name":"Deer stew",
+        "HP":45,
+        "STAM":15,
+        "Tier":1
+    }
+    ,
+    "Muckshake":{
+        "FileName": "Muckshake.png",
+        "Name":"Muckshake",
+        "HP":15,
+        "STAM":50,
+        "Tier":2
+    }
+    ,
+    "Wolf_jerky":{
+        "FileName": "Wolf_jerky.png",
+        "Name":"Wolf jerky",
+        "HP":45,
+        "STAM":15,
+        "Tier":3
+    }
+    ,
+    "Cooked_lox_meat":{
+        "FileName": "Cooked_lox_meat.png",
+        "Name":"Cooked lox meat",
+        "HP":50,
+        "STAM":16,
+        "Tier":999
+    }
+    ,
+    "Black_soup":{
+        "FileName": "Black_soup.png",
+        "Name":"Black soup",
+        "HP":50,
+        "STAM":17,
+        "Tier":4
+    }
+    ,
+    "Turnip_stew":{
+        "FileName": "Turnip_stew.png",
+        "Name":"Turnip stew",
+        "HP":18,
+        "STAM":55,
+        "Tier":1
+    }
+    ,
+    "Sausages":{
+        "FileName": "Sausages.png",
+        "Name":"Sausages",
+        "HP":55,
+        "STAM":18,
+        "Tier":2
+    }
+    ,
+    "Onion_soup":{
+        "FileName": "Onion_soup.png",
+        "Name":"Onion soup",
+        "HP":20,
+        "STAM":60,
+        "Tier":2
+    }
+    ,
+    "Wolf_skewer":{
+        "FileName": "Wolf_skewer.png",
+        "Name":"Wolf skewer",
+        "HP":65,
+        "STAM":21,
+        "Tier":3
+    }
+    ,
+    "Eyescream":{
+        "FileName": "Eyescream.png",
+        "Name":"Eyescream",
+        "HP":21,
+        "STAM":65,
+        "Tier":3
+    }
+    ,
+    "Cooked_serpent_meat":{
+        "FileName": "Cooked_serpent_meat.png",
+        "Name":"Cooked serpent meat",
+        "HP":70,
+        "STAM":23,
+        "Tier":999
+    }
+    ,
+    "Fish_wraps":{
+        "FileName": "Fish_wraps.png",
+        "Name":"Fish wraps",
+        "HP":70,
+        "STAM":23,
+        "Tier":4
+    }
+    ,
+    "Bread":{
+        "FileName": "Bread.png",
+        "Name":"Bread",
+        "HP":23,
+        "STAM":70,
+        "Tier":4
+    }
+    ,
+    "Lox_meat_pie":{
+        "FileName": "Lox_meat_pie.png",
+        "Name":"Lox_meat_pie",
+        "HP":75,
+        "STAM":24,
+        "Tier":4
+    }
+    ,
+    "Blood_pudding":{
+        "FileName": "Blood_pudding.png",
+        "Name":"Blood pudding",
+        "HP":25,
+        "STAM":75,
+        "Tier":4
+    }
+    ,
+    "Serpent_stew":{
+        "FileName": "Serpent_stew.png",
+        "Name":"Serpent stew",
+        "HP":80,
+        "STAM":26,
+        "Tier":1
+    }
 }
