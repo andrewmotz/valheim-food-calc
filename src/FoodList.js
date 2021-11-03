@@ -2,10 +2,12 @@ import React from "react";
 import styles from './FoodList.module.css';
 import FoodItem from "./FoodItem";
 
-export default function FoodList(jsonData, tier, sortOrder, foodItemClickHandler){
+export default function FoodList(jsonData, parameters, foodItemClickHandler){
     let jsonArray = Object.values(jsonData);
     let largestHP = 0;
     let largestSTAM = 0;
+    let tier = parameters[0];
+    let sortOrder = parameters[1];
     let outputArray = [];
 
     //Loop through the json creating a new array that will be outputed and find largest HP/STAM values

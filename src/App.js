@@ -8,6 +8,7 @@ function App() {
   let jsonFile = require("./FoodItems.json");
 
   const [selectedItems, setSelectedItems] = useState([]);
+  const [parameters, setParameters] = useState([4, "NONE"]); // To be implemented
   
   function addFoodItemClickHandler(foodobject){
     console.log(selectedItems);
@@ -40,7 +41,7 @@ function App() {
     <>
       <h1> Valheim Food Calculator </h1>
       <SelectedFood selectedItems={selectedItems} removeFoodItemClickHandler={removeFoodItemClickHandler} jsonFile={jsonFile}/>
-      { FoodList(jsonFile, 4, "NAME", addFoodItemClickHandler) }
+      { FoodList(jsonFile, parameters, addFoodItemClickHandler) }
     </>
   );
 }

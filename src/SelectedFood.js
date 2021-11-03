@@ -1,5 +1,6 @@
 import React from "react";
 import FoodItem from "./FoodItem";
+import styles from "./SelectedFood.module.css";
 
 export default function SelectedFood({selectedItems, removeFoodItemClickHandler, jsonFile}){
     let jsonArray = Object.values(jsonFile);
@@ -19,7 +20,7 @@ export default function SelectedFood({selectedItems, removeFoodItemClickHandler,
 
     return (
         <>
-        <div >
+        <div className={styles.main}>
             {selectedItems.map(foodItem => {
                 return FoodItem(foodItem, largestHP, largestSTAM, removeFoodItemClickHandler);
             })}

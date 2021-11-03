@@ -3,7 +3,7 @@
 .listStyle {
     overflow-y: scroll;
     height: 40em;
-    width: 80%;
+    /* width: 80%; */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
