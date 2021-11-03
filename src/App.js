@@ -16,7 +16,7 @@ function App() {
     <>
       <h1> Hello world </h1>
       {/* { FoodItem(jsonFile, "Blueberries") } */}
-      { FoodList(jsonFile, 1, 1) }
+      { FoodList(jsonFile, 2, "None") }
     </>
   );
 }
