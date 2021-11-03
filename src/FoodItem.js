@@ -1,7 +1,6 @@
 import React from "react";
 import styles from './FoodIcon.module.css';
 import { CircularProgressbar } from 'react-circular-progressbar';
-// import StyledProgressbar from "./StyledProgressar";
 
 //style object for the health bar
 const HEALTHSTYLES = {
@@ -34,20 +33,24 @@ const HEALTHSTYLES = {
   }
 
 
-export default function FoodItem(jsonData, foodObject){
+export default function FoodItem(foodObject){
     
     return (
         <div className={styles.foodIconContainer}>
             <p className= {styles.itemNameCSS}>{foodObject.Name}</p>
+
             <div className={styles.foodIcon}>
+              {/* Div for the progress bars */}
                 <div className={styles.progressBars}>
                     <CircularProgressbar value = {foodObject.HP} maxValue={100} 
                         counterClockwise={true} circleRatio={.5} styles={HEALTHSTYLES} strokeWidth={5}/>
-                    {/* <StyledProgressbar value = {5} maxValue={100} minValue={0} counterClockwise={true} circleRatio={.5}/> */}
                     <CircularProgressbar value = {foodObject.STAM} maxValue={50} 
                         circleRatio={.5} styles= {STAMINASTLYES} strokeWidth={5}/>
                 </div>
+
                 <img src={foodObject.FileName} alt= {foodObject.Name}/>
+
+                {/* HP, SUM, and Stamina Numbers */}
                 <div className = {styles.stats}>
                     <p className={styles.health}>{foodObject.HP}</p>
                     <p className={styles.healthStamina}>{foodObject.HP + foodObject.STAM} </p>
