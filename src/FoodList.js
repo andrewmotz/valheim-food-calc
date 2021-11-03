@@ -27,11 +27,14 @@ export default function FoodList(jsonData, tier, sortOrder){
 
     //Sort the Array
     if (sortOrder === "HP")
-        outputArray.sort(HPcompare)
+        outputArray.sort(HPcompare);
     else if (sortOrder === "STAM")
-        outputArray.sort(STAMcompare)
+        outputArray.sort(STAMcompare);
     else if (sortOrder === "SUM")
-        outputArray.sort(SUMcompare)
+        outputArray.sort(SUMcompare);
+    else if (sortOrder === "NAME")
+        outputArray.sort(NAMEcompare);
+
     
     //Return the data from the output array
     return (
@@ -65,12 +68,21 @@ function STAMcompare(a, b){
 //Sort by HP + Stamina
 function SUMcompare(a, b){
     let aSum = a.HP + a.STAM;
-    let bSum = a.HP + b.STAM;
+    let bSum = b.HP + b.STAM;
 
     if(aSum < bSum)
         return 1;
     if(aSum > bSum)
         return -1;
+    return 0;
+}
+
+//Sort by Name
+function NAMEcompare(a, b){
+    if(a.Name < b.Name)
+        return -1;
+    if(a.Name > b.Name)
+        return 1;
     return 0;
 }
 
