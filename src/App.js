@@ -96,11 +96,11 @@ function App() {
       <h1> Valheim Food Calculator </h1>
       <div>
         <p>Tier Selection</p>
-        <TierSelector setTier={setTier}/>
+        <TierSelector setTier={setTier} currentTier={parameters[0]}/>
       </div>
       <div>
-        <StatBar color="RED" statValue={totalStats[0]} maxStatSum={maxTotalHP} min={50}/>
-        <StatBar color="Yellow" statValue={totalStats[1]} maxStatSum={maxTotalSTAM} min={75}/>
+        <StatBar color="RED" statValue={totalStats[0]} maxStatSum={maxTotalHP} min={25}/>
+        <StatBar color="Yellow" statValue={totalStats[1]} maxStatSum={maxTotalSTAM} min={50}/>
         {/* <progress value="50" max="200"/> */}
       </div>
       <SelectedFood selectedItems={selectedItems} removeFoodItemClickHandler={removeFoodItemClickHandler} jsonFile={jsonFile}/>
