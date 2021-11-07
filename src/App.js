@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import FoodList from "./FoodList";
 import SelectedFood from "./SelectedFood";
+import SortPreference from "./SortPreference";
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
 
   //Reacts fancy state usage, kinda black magic to me but needed in order for stuff to update on page
   const [selectedItems, setSelectedItems] = useState([]);
-  const [parameters, setParameters] = useState([4, "NONE"]); // To be implemented
+  const [parameters, setParameters] = useState([4, "HP"]); // To be implemented
   
   //Called when a item is clicked on in the food list
   function addFoodItemClickHandler(foodobject){
@@ -17,6 +18,10 @@ function App() {
     if(selectedItems.length < 3 && !selectedItems.includes(foodobject)){
       setSelectedItems([...selectedItems,foodobject]);
     }
+  }
+
+  function pickBestFoodItems(){
+    
   }
 
   //Called when items are clicked on in the selected items list
@@ -33,10 +38,19 @@ function App() {
     setSelectedItems([...selectedItems]);
   }
 
+  function sortSelection(newSortPref){
+    let newParameters = [...parameters];
+    newParameters[1] = newSortPref;
+    setParameters(newParameters);
+  }
+
   return (
     <>
       <h1> Valheim Food Calculator </h1>
       <SelectedFood selectedItems={selectedItems} removeFoodItemClickHandler={removeFoodItemClickHandler} jsonFile={jsonFile}/>
+      <div>
+        <SortPreference sortSelection={sortSelection}/>
+      </div>
       { FoodList(jsonFile, parameters, addFoodItemClickHandler) }
     </>
   );
