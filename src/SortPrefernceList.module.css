@@ -1,4 +1,9 @@
 
+.DropDownContainer {
+    cursor: pointer;
+}
+
 .listItems{
-    background-color: rebeccapurple;
+    border: 1px solid black;
+    cursor: pointer;
 }

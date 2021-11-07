@@ -53,7 +53,7 @@ export default function SortPreference({sortSelection}){
     }
 
     return (
-        <div ref={dropDownRef} className="DropDownContainer">
+        <div ref={dropDownRef} className={styles.DropDownContainer}>
             <div onClick={dropDownPressed}>
                 { selectedSort }
             </div>

@@ -3,6 +3,7 @@ import FoodList from "./FoodList";
 import PickBest from "./PickBest";
 import SelectedFood from "./SelectedFood";
 import SortPreference from "./SortPreference";
+import StatBar from "./StatBar";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
   //Reacts fancy state usage, kinda black magic to me but needed in order for stuff to update on page
   const [selectedItems, setSelectedItems] = useState([]); //Can set the default selected items, current set to nothing
   const [parameters, setParameters] = useState([4, "HP"]); // Default sort tier, default sorting preference
+  const [totalStats, setStats] = useState([50,75]);
   
   //Called when a item is clicked on in the food list
   function addFoodItemClickHandler(foodobject){
@@ -39,6 +41,7 @@ function App() {
     setSelectedItems([...selectedItems]);
   }
 
+  //Called by the dropdown list to set the new sorting preference
   function sortSelection(newSortPref){
     let newParameters = [...parameters];
     newParameters[1] = newSortPref;
@@ -48,6 +51,11 @@ function App() {
   return (
     <>
       <h1> Valheim Food Calculator </h1>
+      <div>
+        <StatBar color="RED" statValue={50} maxStatSum={100} min={75}/>
+        <StatBar color="Yellow" statValue={50} maxStatSum={100} min={75}/>
+        {/* <progress value="50" max="200"/> */}
+      </div>
       <SelectedFood selectedItems={selectedItems} removeFoodItemClickHandler={removeFoodItemClickHandler} jsonFile={jsonFile}/>
       <div>
         <SortPreference sortSelection={sortSelection}/>

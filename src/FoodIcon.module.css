@@ -9,6 +9,7 @@
     width: 11em;
     height: 12em;
     padding: .5em;
+    cursor: pointer;
 }
 .foodIconContainer > p {
     font-size: 1.5em;
