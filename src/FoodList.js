@@ -8,8 +8,9 @@ export default function FoodList(jsonData, parameters, foodItemClickHandler){
     let largestHP = 0;
     let largestSTAM = 0;
     let tier = parameters[0];
-    let sortOrder = parameters[1];
-    let outputArray = [];
+
+    //Create a sorted array based off set sort parameter
+    let outputArray = sortJSONtoArray(parameters[1]);
 
     //Loop through the json creating a new array that will be outputed and find largest HP/STAM values
     for(let i = 0; i < jsonArray.length; i++){
@@ -24,8 +25,6 @@ export default function FoodList(jsonData, parameters, foodItemClickHandler){
         if(jsonArray[i].STAM > largestSTAM)
             largestSTAM = jsonArray[i].STAM;
     }
-    
-    outputArray = sortJSONtoArray(sortOrder);
 
     
     //Return the data from the output array

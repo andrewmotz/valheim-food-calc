@@ -1,14 +1,33 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styles from "./SortPrefernceList.module.css";
 
 export default function SortPreference({sortSelection}){
     const dropDownRef = useRef(null);
-    const [active, setActive] = useState(false);
+    const [isActive, setActive] = useState(false);
     const [selectedSort, setSelectedSort] = useState("Health");
+
+    //Code that looks if the user clicked out of the dropdwon and closes it if true
+    useEffect(()=>{
+        //code that runs once the page is clicked
+        const pageClickEvent = (e) =>{
+            //If not click on the dropdown, toggled the isActive state
+            if(dropDownRef.current != null && !dropDownRef.current.contains(e.target)){
+                setActive(!isActive);
+            }
+        }
+        //Add event listener once dropdown is clicked
+        if(isActive){
+            window.addEventListener('click', pageClickEvent);
+        }
+        //Remove the event listener when the dropdown is closed
+        return () => {
+            window.removeEventListener('click', pageClickEvent);
+        }
+    }, [isActive])
 
     //Toggles the dropdown
     function dropDownPressed(){
-        setActive(!active);
+        setActive(!isActive);
         console.log("boop");
     }
 
@@ -39,7 +58,7 @@ export default function SortPreference({sortSelection}){
                 { selectedSort }
             </div>
 
-            {active && //runs if active is true
+            {isActive && //runs if active is true
                 <ul className={styles.listItems}>
                     <li onClick={setSortHealth}>Health</li>
                     <li onClick={setSortStamina}>Stamina</li>

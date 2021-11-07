@@ -1,3 +1,5 @@
+//Code for some the same functionaly used in multiple places.
+
 function sortJSONtoArray(sortPref){
     let jsonArray = Object.values(require("./FoodItems.json"));
 
