@@ -1,7 +1,8 @@
 /* Import Font */
 @font-face {
     font-family: norse;
-    src: url(https://www.1001fonts.com/download/font/norse.bold.otf);
+    src: local("Norse"),
+        url("./fonts/Norse/norse.bold.otf");
 }
 
 /* This is for each of the food icons within the food list */

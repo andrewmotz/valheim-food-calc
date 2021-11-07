@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './FoodIcon.module.css';
 import { CircularProgressbar } from 'react-circular-progressbar';
+import { v4 as uuidv4 } from 'uuid'; //This is so jsx doesnt get mad, when the list is made in a loop, it should have a unique key
 
 //style object for the health bar
 const HEALTHSTYLES = {
@@ -41,7 +42,7 @@ export default function FoodItem(foodObject, largestHP, largestSTAM, foodItemCli
       }
 
     return (
-        <div className={styles.foodIconContainer} onClick={handleOnClick}>
+        <div key={uuidv4()} className={styles.foodIconContainer} onClick={handleOnClick}>
             <p className= {styles.itemNameCSS}>{foodObject.Name}</p>
 
             <div className={styles.foodIcon}>
