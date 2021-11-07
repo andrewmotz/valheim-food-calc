@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import FoodList from "./FoodList";
+import PickBest from "./PickBest";
 import SelectedFood from "./SelectedFood";
 import SortPreference from "./SortPreference";
 
@@ -8,8 +9,8 @@ function App() {
   let jsonFile = require("./FoodItems.json");
 
   //Reacts fancy state usage, kinda black magic to me but needed in order for stuff to update on page
-  const [selectedItems, setSelectedItems] = useState([]);
-  const [parameters, setParameters] = useState([4, "HP"]); // To be implemented
+  const [selectedItems, setSelectedItems] = useState([]); //Can set the default selected items, current set to nothing
+  const [parameters, setParameters] = useState([4, "HP"]); // Default sort tier, default sorting preference
   
   //Called when a item is clicked on in the food list
   function addFoodItemClickHandler(foodobject){
@@ -20,8 +21,8 @@ function App() {
     }
   }
 
-  function pickBestFoodItems(){
-    
+  function pickBestFoodItems(food1, food2, food3){
+    setSelectedItems([food1, food2, food3]);
   }
 
   //Called when items are clicked on in the selected items list
@@ -50,6 +51,7 @@ function App() {
       <SelectedFood selectedItems={selectedItems} removeFoodItemClickHandler={removeFoodItemClickHandler} jsonFile={jsonFile}/>
       <div>
         <SortPreference sortSelection={sortSelection}/>
+        <PickBest pickBestFoodItems={pickBestFoodItems} parameters={parameters} />
       </div>
       { FoodList(jsonFile, parameters, addFoodItemClickHandler) }
     </>
