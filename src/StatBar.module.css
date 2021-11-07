@@ -1,7 +1,18 @@
 
 .barStyles{
-    width: 80%;
+    width: 100%;
     padding: 1em;
+    display: flex;
+
+}
+
+.statContainer {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.barContainer {
+    flex-grow: 20;
 }
 
 .progressBar {
