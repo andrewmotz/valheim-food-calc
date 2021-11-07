@@ -5,6 +5,7 @@ import SelectedFood from "./SelectedFood";
 import SortPreference from "./SortPreference";
 import StatBar from "./StatBar";
 import sortJSONtoArray from "./FoodSorter.js";
+import TierSelector from "./TierSelector";
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
 
   //Reacts fancy state usage, kinda black magic to me but needed in order for stuff to update on page
   const [selectedItems, setSelectedItems] = useState([]); //Can set the default selected items, current set to nothing
-  const [parameters, setParameters] = useState([4, "HP"]); // Default sort tier, default sorting preference
+  const [parameters, setParameters] = useState([1, "HP"]); // Default sort tier, default sorting preference
   const [totalStats, setStats] = useState([0,0]);
   
   //Called when a item is clicked on in the food list
@@ -74,6 +75,13 @@ function App() {
     setStats(newTotalStats);
   }
 
+  //Called by the tier selector
+  function setTier(newTier){
+    let newParameters = [...parameters];
+    newParameters[0] = newTier;
+    setParameters(newParameters);
+  }
+
   //Find the largest possible value for health and stamina for the bars
   let maxTotalHP = 0;
   let maxTotalSTAM = 0;
@@ -86,6 +94,10 @@ function App() {
   return (
     <>
       <h1> Valheim Food Calculator </h1>
+      <div>
+        <p>Tier Selection</p>
+        <TierSelector setTier={setTier}/>
+      </div>
       <div>
         <StatBar color="RED" statValue={totalStats[0]} maxStatSum={maxTotalHP} min={50}/>
         <StatBar color="Yellow" statValue={totalStats[1]} maxStatSum={maxTotalSTAM} min={75}/>

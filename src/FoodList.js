@@ -8,15 +8,16 @@ export default function FoodList(jsonData, parameters, foodItemClickHandler){
     let largestHP = 0;
     let largestSTAM = 0;
     let tier = parameters[0];
+    let outputArray = [];
 
     //Create a sorted array based off set sort parameter
-    let outputArray = sortJSONtoArray(parameters[1]);
+    let sortedArray = sortJSONtoArray(parameters[1]);
 
     //Loop through the json creating a new array that will be outputed and find largest HP/STAM values
-    for(let i = 0; i < jsonArray.length; i++){
+    for(let i = 0; i < sortedArray.length; i++){
         //Populate food list by selected tier or lower
-        if(jsonArray[i].Tier <= tier)
-            outputArray.push(jsonArray[i]);
+        if(sortedArray[i].Tier <= tier)
+            outputArray.push(sortedArray[i]);
 
         //Find the largest HP and Stamina values to set the hp/stam bars limit
         if(jsonArray[i].HP > largestHP)
@@ -26,7 +27,6 @@ export default function FoodList(jsonData, parameters, foodItemClickHandler){
             largestSTAM = jsonArray[i].STAM;
     }
 
-    
     //Return the data from the output array
     return (
         <div className={styles.listStyle}>
