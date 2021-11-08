@@ -6,6 +6,7 @@ import SortPreference from "./SortPreference";
 import StatBar from "./StatBar";
 import sortJSONtoArray from "./FoodSorter.js";
 import TierSelector from "./TierSelector";
+import styles from "./App.module.css";
 
 
 function App() {
@@ -88,7 +89,7 @@ function App() {
   maxTotalSTAM = jsonArraySTAM[0].STAM + jsonArraySTAM[1].STAM + jsonArraySTAM[2].STAM;
 
   return (
-    <>
+    <div className={styles.body}>
       <h1> Valheim Food Calculator </h1>
       <div>
         <p>Tier Selection</p>
@@ -105,7 +106,7 @@ function App() {
         <PickBest pickBestFoodItems={pickBestFoodItems} parameters={parameters}/>
       </div>
       { FoodList(jsonFile, parameters, addFoodItemClickHandler) }
-    </>
+    </div>
   );
 }
 

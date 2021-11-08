@@ -60,7 +60,7 @@ export default function FoodItem(foodObject, largestHP, largestSTAM, foodItemCli
                 {/* HP, SUM, and Stamina Numbers */}
                 <div className = {styles.stats}>
                     <p className={styles.health}>{foodObject.HP}</p>
-                    <p className={styles.healthStamina}>{foodObject.HP + foodObject.STAM} </p>
+                    <p className={styles.statsum}>{foodObject.HP + foodObject.STAM} </p>
                     <p className={styles.stamina}>{foodObject.STAM}</p>
                 </div>
             </div>
