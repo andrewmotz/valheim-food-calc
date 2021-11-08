@@ -92,7 +92,7 @@
         "Name":"Onion",
         "HP":13,
         "STAM":40,
-        "Tier":999
+        "Tier":2
     }
     ,
     "Cloudberries":{
@@ -100,7 +100,7 @@
         "Name":"Cloudberries",
         "HP":13,
         "STAM":40,
-        "Tier":999
+        "Tier":4
     }
     ,
     "Queens_jam":{
@@ -124,7 +124,7 @@
         "Name":"Cooked fish",
         "HP":45,
         "STAM":15,
-        "Tier":999
+        "Tier":1
     }
     ,
     "Deer_stew":{
@@ -156,7 +156,7 @@
         "Name":"Cooked lox meat",
         "HP":50,
         "STAM":16,
-        "Tier":999
+        "Tier":4
     }
     ,
     "Black_soup":{
@@ -212,7 +212,7 @@
         "Name":"Cooked serpent meat",
         "HP":70,
         "STAM":23,
-        "Tier":999
+        "Tier":1
     }
     ,
     "Fish_wraps":{
