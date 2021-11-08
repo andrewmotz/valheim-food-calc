@@ -18,9 +18,9 @@ function App() {
   
   //Called when a item is clicked on in the food list
   function addFoodItemClickHandler(foodobject){
-    updateTotalStats('+',foodobject);
     if(selectedItems.length < 3 && !selectedItems.includes(foodobject)){
       setSelectedItems([...selectedItems,foodobject]);
+      updateTotalStats('+',foodobject);
     }
   }
 
@@ -66,12 +66,8 @@ function App() {
   }
   function addThreeToStats(food1, food2, food3){
     let newTotalStats = [0,0];
-    newTotalStats[0] += food1.HP;
-    newTotalStats[1] += food1.STAM;
-    newTotalStats[0] += food2.HP;
-    newTotalStats[1] += food2.STAM;
-    newTotalStats[0] += food3.HP;
-    newTotalStats[1] += food3.STAM;
+    newTotalStats[0] += food1.HP + food2.HP + food3.HP;
+    newTotalStats[1] += food1.STAM + food2.STAM + food3.STAM;
     setStats(newTotalStats);
   }
 
@@ -85,11 +81,11 @@ function App() {
   //Find the largest possible value for health and stamina for the bars
   let maxTotalHP = 0;
   let maxTotalSTAM = 0;
-  let jsonArrayHP = sortJSONtoArray("HP");
-  let jsonArraySTAM = sortJSONtoArray("STAM");
+  let jsonArrayHP = sortJSONtoArray("HP", 4);
+  let jsonArraySTAM = sortJSONtoArray("STAM", 4);
 
   maxTotalHP = jsonArrayHP[0].HP + jsonArrayHP[1].HP + jsonArrayHP[2].HP;
-  maxTotalSTAM = jsonArraySTAM[0].STAM + jsonArraySTAM[1].STAM  + jsonArraySTAM[2].STAM ;
+  maxTotalSTAM = jsonArraySTAM[0].STAM + jsonArraySTAM[1].STAM + jsonArraySTAM[2].STAM;
 
   return (
     <>
@@ -106,7 +102,7 @@ function App() {
       <SelectedFood selectedItems={selectedItems} removeFoodItemClickHandler={removeFoodItemClickHandler} jsonFile={jsonFile}/>
       <div>
         <SortPreference sortSelection={sortSelection}/>
-        <PickBest pickBestFoodItems={pickBestFoodItems} parameters={parameters} />
+        <PickBest pickBestFoodItems={pickBestFoodItems} parameters={parameters}/>
       </div>
       { FoodList(jsonFile, parameters, addFoodItemClickHandler) }
     </>

@@ -2,8 +2,7 @@ import React from "react";
 import sortJSONtoArray from "./FoodSorter.js";
 
 export default function PickBest({pickBestFoodItems, parameters}){
-    let sortPref = parameters[1];
-    let jsonArray = sortJSONtoArray(sortPref);
+    let jsonArray = sortJSONtoArray(parameters[1], parameters[0]);
 
 
     function onPickBestClick(){

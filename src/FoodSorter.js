@@ -1,19 +1,25 @@
 //Code for some the same functionaly used in multiple places.
 
-function sortJSONtoArray(sortPref){
+function sortJSONtoArray(sortPref, tier){
     let jsonArray = Object.values(require("./FoodItems.json"));
+    let outputArray = [];
 
+    //Only add elements by the correct tier
+    for(let i = 0; i < jsonArray.length; i++){
+        if(jsonArray[i].Tier <= tier)
+            outputArray.push(jsonArray[i]);
+    }
     //Sort the Array
     if (sortPref === "HP")
-        jsonArray.sort(HPcompare);
+        outputArray.sort(HPcompare);
     else if (sortPref === "STAM")
-        jsonArray.sort(STAMcompare);
+        outputArray.sort(STAMcompare);
     else if (sortPref === "SUM")
-        jsonArray.sort(SUMcompare);
+        outputArray.sort(SUMcompare);
     else if (sortPref === "NAME")
-        jsonArray.sort(NAMEcompare);
+        outputArray.sort(NAMEcompare);
 
-    return jsonArray
+    return outputArray
 } export default sortJSONtoArray;
 
 
