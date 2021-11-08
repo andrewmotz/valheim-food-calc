@@ -43,8 +43,9 @@ export default function FoodItem(foodObject, largestHP, largestSTAM, foodItemCli
 
     return (
         <div key={uuidv4()} className={styles.foodIconContainer} onClick={handleOnClick}>
-            <p className= {styles.itemNameCSS}>{foodObject.Name}</p>
-
+            <div className={styles.nameDiv}>
+              <p className={styles.itemNameCSS}>{foodObject.Name}</p>
+            </div>
             <div className={styles.foodIcon}>
               {/* Div for the progress bars */}
                 <div className={styles.progressBars}>
