@@ -13,13 +13,12 @@
         height: 6em;
         /* margin-left: 1em; */
         /* margin: 0; */
-        margin-left: auto;
-        margin-right: auto;
+        /* margin-left: auto;
+        margin-right: auto; */
     }
     .main > div {
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
+        /* margin-left: auto;
+        margin-right: auto; */
     }
     .main{
         height: 11em;
@@ -27,5 +26,20 @@
     .main > div > div:nth-child(2) > div:nth-child(2) {
         margin: 0;
         background-color: red;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .main > div > div:nth-child(2) {
+        width: 3em;
+        height: 3em;
+        /* margin-left: 1em; */
+        /* margin: 0; */
+        /* margin-left: auto;
+        margin-right: auto; */
+    }
+
+    .main {
+        height: 8em;
     }
 }

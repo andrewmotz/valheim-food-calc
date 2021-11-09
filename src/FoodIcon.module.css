@@ -96,3 +96,23 @@ img {
         height: 8.5em;
     }
   }
+
+  @media only screen and (max-width: 630px) {
+    .foodIcon {
+        width: 3em;
+        height: 3em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .foodIconContainer > div > p {
+        font-size: 1em;
+    }
+    .stats {
+        font-size: 1em;
+    }
+
+    .foodIconContainer{
+        width: 4em;
+        height: 4em;
+    }
+  }
