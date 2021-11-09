@@ -10,8 +10,6 @@
     width: 5em;
     height: 5em;
     cursor: pointer;
-    background-image: url(images/panel_interior_bkg_128.png);
-    background-repeat: no-repeat;
 }
 
 .main > p{
@@ -23,6 +21,9 @@
     text-align: center;
     z-index: 2;
     font-family: norse;
+    color: yellow;
+    text-shadow: #000 1px 1px 0px,#000 -1px 1px 0px,#000 1px -1px 0px,#000 -1px -1px 0px;
+    font-size: large;
 }
 
 .main > img {

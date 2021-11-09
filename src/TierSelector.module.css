@@ -1,3 +1,5 @@
 .container {
     display: flex;
+    background-image: url(images/panel_interior_bkg_128.png);
+    background-repeat: no-repeat;
 }
