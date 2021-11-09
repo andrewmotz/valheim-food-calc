@@ -3,12 +3,12 @@
     width: 100%;
     padding: 1em;
     display: flex;
-
 }
 
 .statContainer {
     flex-grow: 1;
     text-align: center;
+    font-family: url(fonts/Norse/norse.bold.otf);
 }
 
 .barContainer {
