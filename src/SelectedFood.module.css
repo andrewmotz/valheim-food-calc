@@ -5,4 +5,5 @@
     box-shadow: 1px 1px 10px; /* Temporary */
     background-image: url(images/SelectionBackPanel.png);
     background-repeat: no-repeat;
+    background-size: 100%;
 }

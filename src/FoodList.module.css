@@ -10,6 +10,7 @@
     box-shadow: 1px 1px 10px; /* Temporary */
     background-image: url(images/FoodsBackPanel.png);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .listStyle::-webkit-scrollbar {

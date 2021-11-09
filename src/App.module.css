@@ -5,6 +5,7 @@
     margin-right: auto;
     background-image: url("images/woodpanel_serverlist.png");
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .body > h1 {
