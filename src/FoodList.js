@@ -7,8 +7,7 @@ export default function FoodList(jsonData, parameters, foodItemClickHandler){
     let jsonArray = Object.values(jsonData);
     let largestHP = 0;
     let largestSTAM = 0;
-    let tier = parameters[0];
-
+    
     //Create a sorted array based off set sort parameter
     let outputArray = sortJSONtoArray(parameters[1], parameters[0]);
 

@@ -41,7 +41,6 @@ function App() {
     }
     selectedItems[index] = selectedItems[selectedItems.length - 1]; // TODO FIX
     selectedItems.pop();
-    console.log(selectedItems);
     setSelectedItems([...selectedItems]);
   }
 

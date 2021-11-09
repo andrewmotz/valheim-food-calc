@@ -5,7 +5,6 @@ export default function TierIcon({setTier, onTierSelect, tier, isSelected}){
     let imgClass = isSelected? "visible" : "invisible";
 
     function onTierClick(){
-        console.log("boop");
         setTier(tier);
         onTierSelect(tier);
     }
