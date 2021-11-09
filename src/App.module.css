@@ -6,7 +6,7 @@
     margin-right: auto;
     background-image: url("images/woodpanel_serverlist.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     padding: 3em;
 }
 
@@ -20,6 +20,10 @@
 }
 
 .buttons > * {
+    font-family: norse;
+    color: white;
+    font-size: 2em;
+    text-shadow: #000 1px 1px 0px,#000 -1px 1px 0px,#000 1px -1px 0px,#000 -1px -1px 0px;
     background-image: url("images/button.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -28,7 +32,6 @@
     height: 60px;
     margin: 0 1em 0 1em;
     z-index: 5;
-    padding: .75em 0 .75em 0;
 }
 
 /* Pick for me button */
@@ -39,7 +42,13 @@
 .buttons > div:nth-child(1){
     margin-left: 0;
 }
-
-.buttons > *:nth-child(1) > div{
+/* This code made a gap between the health list and other buttons, so I removed it */
+/* .buttons > *:nth-child(1) > div{
     height: 100%;
-}
+} */
+
+@media only screen and (max-width: 768px) {
+    .body {
+      width: 100%;
+    }
+  }
