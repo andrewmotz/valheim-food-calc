@@ -1,9 +1,17 @@
+
+@font-face {
+    font-family: norse;
+    src: local("Norse"),
+        url("./fonts/Norse/norse.bold.otf");
+}
+
 .main {
     display: block; 
     width: 5em;
     height: 5em;
-    background-color: gray;
     cursor: pointer;
+    background-image: url(images/panel_interior_bkg_128.png);
+    background-repeat: no-repeat;
 }
 
 .main > p{
@@ -14,6 +22,7 @@
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 2;
+    font-family: norse;
 }
 
 .main > img {

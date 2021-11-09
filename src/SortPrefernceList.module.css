@@ -1,9 +1,16 @@
+@font-face {
+    font-family: norse;
+    src: local("Norse"),
+        url("./fonts/Norse/norse.bold.otf");
+}
 
 .DropDownContainer {
     cursor: pointer;
+    font-family: norse;
 }
 
 .listItems{
     border: 1px solid black;
     cursor: pointer;
+    font-family: norse;
 }
