@@ -24,11 +24,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     text-align: center;
-    width: 20%;
-    height: 3.5em;
+    width: 200px;
+    height: 60px;
     margin: 0 1em 0 1em;
     z-index: 5;
-    padding: .75em;
+    padding: .75em 0 .75em 0;
 }
 
 /* Pick for me button */
