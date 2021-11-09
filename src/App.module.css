@@ -46,9 +46,20 @@
 /* .buttons > *:nth-child(1) > div{
     height: 100%;
 } */
-
+@media only screen and (max-width: 1050px) {
+    .body {
+      background-color: green;
+    }
+  }
 @media only screen and (max-width: 768px) {
     .body {
       width: 100%;
+      background-color: yellow;
+    }
+  }
+  @media only screen and (max-width: 630px) {
+    .body {
+      width: 100%;
+      background-color: red;
     }
   }

@@ -6,7 +6,7 @@
     /* width: 80%; */
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content:center;
     box-shadow: 1px 1px 10px; /* Temporary */
     background-image: url(images/FoodsBackPanel.png);
     background-size:100% 100%;

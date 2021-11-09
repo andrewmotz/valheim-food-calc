@@ -21,6 +21,7 @@
     padding-inline-start: 0;
     text-shadow: #000 1px 1px 0px,#000 -1px 1px 0px,#000 1px -1px 0px,#000 -1px -1px 0px;
 }
+/* Code to make background of each list item individual if we need it later */
 /* .listItems > li {
     background-image: url("images/button.png");
     background-size:100% 100%;
