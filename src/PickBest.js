@@ -10,7 +10,9 @@ export default function PickBest({pickBestFoodItems, parameters}){
     }
 
     return (
+        <>
             <div onClick={onPickBestClick}>Pick for Me</div>
+        </>
     )
     
 }

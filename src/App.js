@@ -100,7 +100,7 @@ function App() {
         {/* <progress value="50" max="200"/> */}
       </div>
       <SelectedFood selectedItems={selectedItems} removeFoodItemClickHandler={removeFoodItemClickHandler} jsonFile={jsonFile}/>
-      <div>
+      <div className={styles.buttons}>
         <SortPreference sortSelection={sortSelection}/>
         <PickBest pickBestFoodItems={pickBestFoodItems} parameters={parameters}/>
       </div>
