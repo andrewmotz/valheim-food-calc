@@ -233,7 +233,7 @@
     ,
     "Lox_meat_pie":{
         "FileName": "Lox_meat_pie.png",
-        "Name":"Lox_meat_pie",
+        "Name":"Lox meat pie",
         "HP":75,
         "STAM":24,
         "Tier":4
