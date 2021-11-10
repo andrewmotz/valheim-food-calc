@@ -97,22 +97,26 @@ img {
     }
   }
 
-  @media only screen and (max-width: 630px) {
+  @media only screen and (max-width: 450px) {
     .foodIcon {
-        width: 3em;
-        height: 3em;
+        width: 4em;
+        height: 4em;
         margin-left: auto;
         margin-right: auto;
     }
+    .nameDiv{
+        height: .7em;
+    }
     .foodIconContainer > div > p {
-        font-size: 1em;
+        font-size: 1em; 
+        margin: 0;
     }
     .stats {
         font-size: 1em;
     }
 
     .foodIconContainer{
-        width: 4em;
-        height: 4em;
+        width: 5.5em;
+        height: 4.7em;
     }
   }

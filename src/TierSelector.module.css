@@ -9,3 +9,11 @@
     border: 5px solid #9E6208;
     flex-shrink: 1;
 }
+@media only screen and (max-width: 450px) {
+    .container{
+        height: 6em;
+        flex-flow: row;
+        font-size: .6em;
+        border: none;
+    }
+  }

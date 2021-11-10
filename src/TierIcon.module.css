@@ -45,3 +45,8 @@
 .invisible {
     visibility: hidden;
 }
+@media only screen and (max-width: 450px) {
+    .main > img{
+        padding-bottom: 2em;
+    }
+  }

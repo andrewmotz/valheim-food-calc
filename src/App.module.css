@@ -15,6 +15,9 @@
 .body > h1 {
     text-align: center;
 }
+.body > div >  p {
+  margin: 0;
+}
 
 .buttons {
     display: flex;
@@ -27,7 +30,7 @@
     font-size: 2em;
     text-shadow: #000 1px 1px 0px,#000 -1px 1px 0px,#000 1px -1px 0px,#000 -1px -1px 0px;
     background-image: url("images/button.png");
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     text-align: center;
     width: 200px;
@@ -60,9 +63,23 @@
       background-color: yellow;
     }
   }
-  @media only screen and (max-width: 630px) {
+  @media only screen and (max-width: 450px) {
     .body {
       width: 100%;
       background-color: red;
+    }
+    .buttons > div{
+      height: 1.5em;
+      margin: 0;
+      font-size: 1.5em;
+    }
+    .body > h1{
+      font-size: 1.4em;
+    }
+  }
+  @media only screen and (max-width: 240px) {
+   
+    .buttons > div{
+      font-size: 1.2em;
     }
   }

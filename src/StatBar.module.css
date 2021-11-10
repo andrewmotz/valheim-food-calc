@@ -35,3 +35,14 @@
 .progressBarYellow > div {
     background-color: yellow;
 }
+@media only screen and (max-width: 450px) {
+    .statContainer{
+        padding-top: 0em;
+    }
+    .progressBarRed, .progressBarYellow{
+        height: 1.5em;
+    }
+    .statContainer{
+        font-size: 1.5em;
+    }
+  }
