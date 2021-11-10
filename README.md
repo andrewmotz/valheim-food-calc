@@ -1,3 +1,7 @@
+# A Valheim food calculator
+
+Thanks for checking out the project. Our first crack at a react project so pardon any derpyness on our part. :grinning:
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
