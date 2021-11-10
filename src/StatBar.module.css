@@ -14,12 +14,14 @@
     flex-grow: 1;
     text-align: center;
     font-family: norse;
-    font-size: 2em;
+    font-size: 2.3em;
+    color: white;
+    text-shadow: #000 1px 1px 0px,#000 -1px 1px 0px,#000 1px -1px 0px,#000 -1px -1px 0px;
 }
 
 .barContainer {
     flex-grow: 20;
-    padding-top: .5em;
+    padding-top: .9em;
 }
 
 .progressBarRed, .progressBarYellow{
