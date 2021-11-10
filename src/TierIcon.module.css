@@ -7,7 +7,7 @@
 
 
 .main {
-    display: block; 
+    display: relative; 
     width: 5em;
     height: 5em;
     cursor: pointer;
@@ -31,9 +31,9 @@
 
 .main > img {
     position: relative;
-    top: -40%;
     left: 51%;
     width: 100%;
+    top: -2em;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
