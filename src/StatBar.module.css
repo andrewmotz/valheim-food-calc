@@ -36,7 +36,8 @@
 }
 
 .progressBarRed, .progressBarYellow{
-    height: 2em;
+    height: 2.5em;
+    border: 1px solid rgba(0,0,0,.7);
 }
 
 .progressBarRed > div {

@@ -3,13 +3,13 @@
 .listStyle {
     overflow-y: scroll;
     height: 45%;
-    /* width: 80%; */
     display: flex;
     flex-flow: row wrap;
     justify-content:center;
-    box-shadow: 1px 1px 10px; /* Temporary */
+    box-shadow: 1px 1px 10px;
     background-image: url(images/FoodsBackPanel.png);
     background-size:100% 100%;
+    border-radius: .25em;
 }
 
 .listStyle::-webkit-scrollbar {

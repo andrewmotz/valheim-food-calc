@@ -93,7 +93,7 @@ function App() {
     <div className={styles.body}>
       <h1> Valheim Food Calculator </h1>
       <div>
-        <p>Tier Selection</p>
+        <p className={styles.tierText}>Tier Selection</p>
         <TierSelector setTier={setTier} currentTier={parameters[0]}/>
       </div>
       <div>

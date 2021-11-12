@@ -8,6 +8,7 @@
     background-image: url(images/FoodsBackPanelSmall_Version.png);
     background-repeat: no-repeat;
     background-size:100% 100%;
+    border-radius: .25em;
 }
 
 /* Mobile styles */
@@ -15,15 +16,7 @@
     .main > div > div:nth-child(2) {
         width: 6em;
         height: 6em;
-        /* margin-left: 1em; */
-        /* margin: 0; */
-        /* margin-left: auto;
-        margin-right: auto; */
     }
-    /* .main > div {
-        margin-left: auto;
-        margin-right: auto;
-    } */
     .main{
         height: 11em;
     }
