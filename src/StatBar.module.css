@@ -1,3 +1,5 @@
+/* Styling for the StatBar.js */
+
 @font-face {
     font-family: norse;
     src: local("Norse"),
@@ -10,13 +12,22 @@
     display: flex;
 }
 
-.statContainer {
+.statTextYellow, .statTextRed {
     flex-grow: 1;
     text-align: center;
     font-family: norse;
     font-size: 2.3em;
     color: white;
+    width: 1em;
     text-shadow: #000 1px 1px 0px,#000 -1px 1px 0px,#000 1px -1px 0px,#000 -1px -1px 0px;
+}
+
+.statTextYellow {
+    color: yellow;
+}
+
+.statTextRed {
+    color: red;
 }
 
 .barContainer {

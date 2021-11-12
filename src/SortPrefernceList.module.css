@@ -1,3 +1,5 @@
+/* Styles for SortPreference.js */
+
 @font-face {
     font-family: norse;
     src: local("Norse"),
@@ -21,6 +23,7 @@
     padding-inline-start: 0;
     text-shadow: #000 1px 1px 0px,#000 -1px 1px 0px,#000 1px -1px 0px,#000 -1px -1px 0px;
 }
+
 @media only screen and (max-width: 450px) {
     /* .DropDownContainer > div{
         color: pink;

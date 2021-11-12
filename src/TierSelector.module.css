@@ -1,14 +1,15 @@
+/* Styles for TierSelector.js */
+
 .container {
     display: flex;
     padding: .5em 0 .5em 0;
-    /* background-image: url(images/panel_interior_bkg_128.png); */
-    /* background-repeat: no-repeat; */
-    /* background-size:100% 100%; */
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     border: 5px solid #9E6208;
     flex-shrink: 1;
 }
+
+/* Mobile styles */
 @media only screen and (max-width: 450px) {
     .container{
         height: 6em;

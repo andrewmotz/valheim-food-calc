@@ -4,7 +4,7 @@ import sortJSONtoArray from "./FoodSorter.js";
 export default function PickBest({pickBestFoodItems, parameters}){
     let jsonArray = sortJSONtoArray(parameters[1], parameters[0]);
 
-
+    //"Pick for me" button click handler
     function onPickBestClick(){
         pickBestFoodItems(jsonArray[0],jsonArray[1],jsonArray[2])
     }

@@ -4,6 +4,7 @@ import styles from "./TierIcon.module.css";
 export default function TierIcon({setTier, onTierSelect, tier, isSelected}){
     let imgClass = isSelected? "visible" : "invisible";
 
+    // Tier select clicker handler
     function onTierClick(){
         setTier(tier);
         onTierSelect(tier);

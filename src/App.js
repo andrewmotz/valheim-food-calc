@@ -25,6 +25,7 @@ function App() {
     }
   }
 
+  //Called when the "pick for me" button is pressed
   function pickBestFoodItems(food1, food2, food3){
     addThreeToStats(food1, food2, food3);
     setSelectedItems([food1, food2, food3]);
@@ -70,6 +71,7 @@ function App() {
     newTotalStats[1] += food1.STAM + food2.STAM + food3.STAM;
     setStats(newTotalStats);
   }
+  //End of update the total stats
 
   //Called by the tier selector
   function setTier(newTier){
@@ -97,7 +99,6 @@ function App() {
       <div>
         <StatBar color="RED" statValue={totalStats[0]} maxStatSum={maxTotalHP} min={25}/>
         <StatBar color="Yellow" statValue={totalStats[1]} maxStatSum={maxTotalSTAM} min={50}/>
-        {/* <progress value="50" max="200"/> */}
       </div>
       <SelectedFood selectedItems={selectedItems} removeFoodItemClickHandler={removeFoodItemClickHandler} jsonFile={jsonFile}/>
       <div className={styles.buttons}>

@@ -6,6 +6,7 @@ import styles from "./TierSelector.module.css";
 export default function TierSelector({setTier, currentTier}){
     const [selectedTiers, setSelectedTier] = useState([true, false, false, false]);
 
+    //Ontier icon clicker handler
     function onTierSelect(tier){
         let newSlectedTiers = [false, false, false, false];
         newSlectedTiers[tier-1] = true;

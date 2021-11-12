@@ -1,4 +1,4 @@
-
+/* Styles for App.js */
 .body {
     width: 60%;
     height: 100%;
@@ -47,10 +47,8 @@
 .buttons > div:nth-child(1){
     margin-left: 0;
 }
-/* This code made a gap between the health list and other buttons, so I removed it */
-/* .buttons > *:nth-child(1) > div{
-    height: 100%;
-} */
+
+/* Mobile styles */
 @media only screen and (max-width: 1050px) {
     .body {
       padding: 1.5em;

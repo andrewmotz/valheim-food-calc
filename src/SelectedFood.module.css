@@ -1,12 +1,16 @@
+/* Styles for SelectedFood.js */
+
 .main {
     display: flex;
     justify-content: center;
     height: 15em;
-    box-shadow: 1px 1px 10px; /* Temporary */
+    box-shadow: 1px 1px 10px;
     background-image: url(images/FoodsBackPanelSmall_Version.png);
     background-repeat: no-repeat;
     background-size:100% 100%;
 }
+
+/* Mobile styles */
 @media only screen and (max-width: 1050px) {
     .main > div > div:nth-child(2) {
         width: 6em;
@@ -16,10 +20,10 @@
         /* margin-left: auto;
         margin-right: auto; */
     }
-    .main > div {
-        /* margin-left: auto;
-        margin-right: auto; */
-    }
+    /* .main > div {
+        margin-left: auto;
+        margin-right: auto;
+    } */
     .main{
         height: 11em;
     }

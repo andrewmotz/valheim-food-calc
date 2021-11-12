@@ -1,4 +1,5 @@
-/* Import Font */
+/* Styles for the FoodItem.js */
+
 @font-face {
     font-family: norse;
     src: local("Norse"),
@@ -84,6 +85,8 @@ img {
 .progressBars {
     position: relative;
 }
+
+/* Mobile styles */
 @media only screen and (max-width: 1050px) {
     .foodIcon {
         width: 6em;
