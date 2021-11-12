@@ -2,7 +2,7 @@
 
 Thanks for checking out the project! Our app is live [here](https://andrewmotz.github.io/valheim-food-calc). This is our first crack at a react project so pardon any derpyness on our part. :grinning:
 
-All the HP/Stamina values are generated from the `FoodItem.json`. In the future these values may be wrong and if we haven't fixed them, feel free to make a PR! :happy:
+All the HP/Stamina values are generated from the `FoodItem.json`. In the future these values may be wrong and if we haven't fixed them, feel free to make a PR! :smile:
 
 ## Getting Started with Create React App
 
