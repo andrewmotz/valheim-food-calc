@@ -1,5 +1,6 @@
 import React from "react";
 import sortJSONtoArray from "./FoodSorter.js";
+import styles from "./PickBest.module.css";
 
 export default function PickBest({pickBestFoodItems, parameters}){
     let jsonArray = sortJSONtoArray(parameters[1], parameters[0]);
@@ -11,7 +12,7 @@ export default function PickBest({pickBestFoodItems, parameters}){
 
     return (
         <>
-            <div onClick={onPickBestClick}>Pick for Me</div>
+            <div className={styles.buttonText} onClick={onPickBestClick}>Pick for Me</div>
         </>
     )
     

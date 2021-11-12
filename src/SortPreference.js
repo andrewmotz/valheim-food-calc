@@ -28,7 +28,6 @@ export default function SortPreference({sortSelection}){
     //Toggles the dropdown
     function dropDownPressed(){
         setActive(!isActive);
-        console.log("boop");
     }
 
     //Set prefernce to heatlh
