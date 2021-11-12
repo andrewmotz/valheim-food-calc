@@ -49,6 +49,10 @@
     z-index: 5;
 }
 
+.buttons > *:active {
+  background-image: url("images/button_pressed.png");
+}
+
 /* Pick for me button */
 .buttons > div:nth-child(2){
     margin-right: 0;    
