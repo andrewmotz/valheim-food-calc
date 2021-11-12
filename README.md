@@ -1,6 +1,6 @@
 # A Valheim food calculator
 
-Thanks for checking out the project. The app is live [here](https://andrewmotz.github.io/valheim-food-calc). Our first crack at a react project so pardon any derpyness on our part. :grinning:
+Thanks for checking out the project! Our app is live [here](https://andrewmotz.github.io/valheim-food-calc). This is our first crack at a react project so pardon any derpyness on our part. :grinning:
 
 All the HP/Stamina values are generated from the `FoodItem.json`. In the future if these values are wrong and we haven't fixed them. Feel free to make a PR! :happy:
 
