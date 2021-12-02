@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/valheim-food-calc/static/css/main.86fad226.chunk.css",
-    "main.js": "/valheim-food-calc/static/js/main.a7ca6d72.chunk.js",
-    "main.js.map": "/valheim-food-calc/static/js/main.a7ca6d72.chunk.js.map",
+    "main.css": "/valheim-food-calc/static/css/main.b6257999.chunk.css",
+    "main.js": "/valheim-food-calc/static/js/main.6808ecee.chunk.js",
+    "main.js.map": "/valheim-food-calc/static/js/main.6808ecee.chunk.js.map",
     "runtime-main.js": "/valheim-food-calc/static/js/runtime-main.53139cda.js",
     "runtime-main.js.map": "/valheim-food-calc/static/js/runtime-main.53139cda.js.map",
     "static/css/2.0a9ec390.chunk.css": "/valheim-food-calc/static/css/2.0a9ec390.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.779c0334.chunk.js.map": "/valheim-food-calc/static/js/2.779c0334.chunk.js.map",
     "index.html": "/valheim-food-calc/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/valheim-food-calc/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.86fad226.chunk.css.map": "/valheim-food-calc/static/css/main.86fad226.chunk.css.map",
+    "static/css/main.b6257999.chunk.css.map": "/valheim-food-calc/static/css/main.b6257999.chunk.css.map",
     "static/js/2.779c0334.chunk.js.LICENSE.txt": "/valheim-food-calc/static/js/2.779c0334.chunk.js.LICENSE.txt",
     "static/media/SortPrefernceList.module.css": "/valheim-food-calc/static/media/crafting_panel.0472cefe.png",
     "static/media/index.css": "/valheim-food-calc/static/media/meadowbackground.f150bae6.png",
@@ -21,7 +21,7 @@
     "static/js/runtime-main.53139cda.js",
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.779c0334.chunk.js",
-    "static/css/main.86fad226.chunk.css",
-    "static/js/main.a7ca6d72.chunk.js"
+    "static/css/main.b6257999.chunk.css",
+    "static/js/main.6808ecee.chunk.js"
   ]
 }
