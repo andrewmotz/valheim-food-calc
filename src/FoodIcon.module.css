@@ -12,7 +12,7 @@
     height: 12em;
     padding: .5em;
     cursor: pointer;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 .nameDiv {
     display: flex;
@@ -98,9 +98,34 @@ img {
         width: 7.5em;
         height: 8.5em;
     }
-  }
+}
 
-  @media only screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
+    .foodIcon {
+        width: 4em;
+        height: 4em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nameDiv{
+        height: .7em;
+        font-size: small;
+    }
+    .foodIconContainer > div > p {
+        font-size: 1em; 
+        margin: 0;
+    }
+    .stats {
+        font-size: 1em;
+    }
+
+    .foodIconContainer{
+        width: 5.5em;
+        height: 4.7em;
+    }
+}
+
+@media only screen and (max-height: 900px) {
     .foodIcon {
         width: 4em;
         height: 4em;
@@ -122,4 +147,4 @@ img {
         width: 5.5em;
         height: 4.7em;
     }
-  }
+}

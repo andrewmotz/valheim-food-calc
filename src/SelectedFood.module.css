@@ -3,6 +3,7 @@
 .main {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 15em;
     box-shadow: 1px 1px 10px;
     background-image: url(images/FoodsBackPanelSmall_Version.png);

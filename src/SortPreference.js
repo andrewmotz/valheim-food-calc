@@ -54,7 +54,7 @@ export default function SortPreference({sortSelection}){
     return (
         <div ref={dropDownRef} className={styles.DropDownContainer}>
             <div onClick={dropDownPressed}>
-                { selectedSort }
+                { selectedSort } ⇵
             </div>
 
             {isActive && //runs if active is true

@@ -2,7 +2,7 @@
 
 .listStyle {
     overflow-y: scroll;
-    height: 45%;
+    height: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content:center;
