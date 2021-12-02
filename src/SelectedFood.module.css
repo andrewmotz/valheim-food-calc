@@ -12,6 +12,11 @@
     border-radius: .25em;
 }
 
+.main > div {
+    margin-bottom: 2em;
+    margin-top: .5em;
+}
+
 /* Mobile styles */
 @media only screen and (max-width: 1050px) {
     .main > div > div:nth-child(2) {

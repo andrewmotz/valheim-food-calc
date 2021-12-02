@@ -12,7 +12,8 @@
     height: 12em;
     padding: .5em;
     cursor: pointer;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 .nameDiv {
     display: flex;
