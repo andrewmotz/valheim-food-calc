@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/valheim-food-calc/static/css/main.5c33ec2f.chunk.css",
-    "main.js": "/valheim-food-calc/static/js/main.6808ecee.chunk.js",
-    "main.js.map": "/valheim-food-calc/static/js/main.6808ecee.chunk.js.map",
+    "main.css": "/valheim-food-calc/static/css/main.9a4f3d28.chunk.css",
+    "main.js": "/valheim-food-calc/static/js/main.ad5f96f5.chunk.js",
+    "main.js.map": "/valheim-food-calc/static/js/main.ad5f96f5.chunk.js.map",
     "runtime-main.js": "/valheim-food-calc/static/js/runtime-main.53139cda.js",
     "runtime-main.js.map": "/valheim-food-calc/static/js/runtime-main.53139cda.js.map",
     "static/css/2.0a9ec390.chunk.css": "/valheim-food-calc/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.779c0334.chunk.js": "/valheim-food-calc/static/js/2.779c0334.chunk.js",
-    "static/js/2.779c0334.chunk.js.map": "/valheim-food-calc/static/js/2.779c0334.chunk.js.map",
+    "static/js/2.934bbf94.chunk.js": "/valheim-food-calc/static/js/2.934bbf94.chunk.js",
+    "static/js/2.934bbf94.chunk.js.map": "/valheim-food-calc/static/js/2.934bbf94.chunk.js.map",
     "index.html": "/valheim-food-calc/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/valheim-food-calc/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.5c33ec2f.chunk.css.map": "/valheim-food-calc/static/css/main.5c33ec2f.chunk.css.map",
-    "static/js/2.779c0334.chunk.js.LICENSE.txt": "/valheim-food-calc/static/js/2.779c0334.chunk.js.LICENSE.txt",
+    "static/css/main.9a4f3d28.chunk.css.map": "/valheim-food-calc/static/css/main.9a4f3d28.chunk.css.map",
+    "static/js/2.934bbf94.chunk.js.LICENSE.txt": "/valheim-food-calc/static/js/2.934bbf94.chunk.js.LICENSE.txt",
     "static/media/SortPrefernceList.module.css": "/valheim-food-calc/static/media/crafting_panel.0472cefe.png",
     "static/media/index.css": "/valheim-food-calc/static/media/meadowbackground.f150bae6.png",
     "static/media/TierIcon.module.css": "/valheim-food-calc/static/media/norse.bold.5efe60ef.otf",
@@ -20,8 +20,8 @@
   "entrypoints": [
     "static/js/runtime-main.53139cda.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.779c0334.chunk.js",
-    "static/css/main.5c33ec2f.chunk.css",
-    "static/js/main.6808ecee.chunk.js"
+    "static/js/2.934bbf94.chunk.js",
+    "static/css/main.9a4f3d28.chunk.css",
+    "static/js/main.ad5f96f5.chunk.js"
   ]
 }
