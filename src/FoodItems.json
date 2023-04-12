@@ -254,4 +254,124 @@
         "STAM":26,
         "Tier":1
     }
+    ,
+    "Magecap":{
+        "FileName": "Magecap.png",
+        "Name":"Magecap",
+        "HP":25,
+        "STAM":25,
+        "Tier":4
+    }
+    ,
+    "Jotun_puffs":{
+        "FileName": "Jotun_puffs.png",
+        "Name":"Jotun puffs",
+        "HP":25,
+        "STAM":25,
+        "Tier":4
+    }
+    ,
+    "Cooked_egg":{
+        "FileName": "Cooked_egg.png",
+        "Name":"Cooked egg",
+        "HP":35,
+        "STAM":12,
+        "Tier":1
+    }
+    ,
+    "Cooked_seeker_meat":{
+        "FileName": "Cooked_seeker_meat.png",
+        "Name":"Cooked seeker meat",
+        "HP":60,
+        "STAM":20,
+        "Tier":4
+    }
+    ,
+    "Cooked_hare_meat":{
+        "FileName": "Cooked_hare_meat.png",
+        "Name":"Cooked hare meat",
+        "HP":60,
+        "STAM":20,
+        "Tier":4
+    }
+    ,
+    "Cooked_chicken_meat":{
+        "FileName": "Cooked_chicken_meat.png",
+        "Name":"Cooked chicken meat",
+        "HP":60,
+        "STAM":20,
+        "Tier":1
+    }
+    ,
+    "Meat_platter":{
+        "FileName": "Meat_platter.png",
+        "Name":"Meat platter",
+        "HP":80,
+        "STAM":26,
+        "Tier":4
+    }
+    ,
+    "Honey_glazed_chicken":{
+        "FileName": "Honey_glazed_chicken.png",
+        "Name":"Honey glazed chicken",
+        "HP":80,
+        "STAM":26,
+        "Tier":1
+    }
+    ,
+    "Misthare_supreme":{
+        "FileName": "Misthare_supreme.png",
+        "Name":"Misthare supreme",
+        "HP":85,
+        "STAM":28,
+        "Tier":4
+    }
+    ,
+    "Salad":{
+        "FileName": "Salad.png",
+        "Name":"Salad",
+        "HP":26,
+        "STAM":80,
+        "Tier":4
+    }
+    ,
+    "Mushroom_omelette":{
+        "FileName": "Mushroom_omelette.png",
+        "Name":"Mushroom omelette",
+        "HP":28,
+        "STAM":85,
+        "Tier":1
+    }
+    ,
+    "Fish_n'_bread":{
+        "FileName": "Fish_n'_bread.png",
+        "Name":"Fish n' bread",
+        "HP":30,
+        "STAM":90,
+        "Tier":4
+    }
+    ,
+    "Stuffed_mushroom":{
+        "FileName": "Stuffed_mushroom.png",
+        "Name":"Stuffed mushroom",
+        "HP":25,
+        "STAM":12,
+        "Tier":4
+    }
+    ,
+    "Yggdrasil_porridge":{
+        "FileName": "Yggdrasil_porridge.png",
+        "Name":"Yggdrasil porridge",
+        "HP":27,
+        "STAM":13,
+        "Tier":4
+    }
+    ,
+    "Seeker_aspic":{
+        "FileName": "Seeker_aspic.png",
+        "Name":"Seeker aspic",
+        "HP":28,
+        "STAM":14,
+        "Tier":4
+    }
 }
